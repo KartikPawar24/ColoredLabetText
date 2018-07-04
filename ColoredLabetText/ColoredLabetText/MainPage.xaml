@@ -2,13 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ColoredLabetText"
-             x:Class="ColoredLabetText.MainPage">
+             x:Class="ColoredLabetText.MainPage"
+             Title="Colored Label Text Using Xamarin Forms">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout HorizontalOptions="Center"
+                 VerticalOptions="Center">
+
+        <Button x:Name="RedBtn"
+                Text="Red"
+                TextColor="Red"
+                Clicked="RedBtn_Clicked"/>
+        
+        <Button x:Name="Blue"
+                Text="Blue"
+                TextColor="Blue"
+                Clicked="Blue_Clicked"/>
+        
+        <Button x:Name="Green"
+                Text="Green"
+                TextColor="Green"
+                Clicked="Green_Clicked"/>
+        
+        <Button x:Name="Yellow"
+                Text="Yellow"
+                TextColor="Yellow"
+                Clicked="Yellow_Clicked"/>
+        
+        <Label x:Name="MainLabel"
+               TextColor="{Binding .}"/>
+
     </StackLayout>
+    
 
 </ContentPage>

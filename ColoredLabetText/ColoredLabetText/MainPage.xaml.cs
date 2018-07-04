@@ -13,5 +13,29 @@ namespace ColoredLabetText
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void RedBtn_Clicked(object sender, EventArgs e)
+        {
+            MainLabel.Text = "You Clicked Red Button";
+            MainLabel.TextColor = Color.Red;
+        }
+
+        private void Blue_Clicked(object sender, EventArgs e)
+        {
+            MainLabel.Text = "You Clicked Blue Button";
+            MainLabel.TextColor = Color.Blue;
+        }
+
+        private void Green_Clicked(object sender, EventArgs e)
+        {
+            MainLabel.Text = "You Clicked Green Button";
+            MainLabel.TextColor = Color.Green;
+        }
+
+        private void Yellow_Clicked(object sender, EventArgs e)
+        {
+            MainLabel.Text = "You Clicked Yellow Button";
+            MainLabel.TextColor = Color.Yellow;
+        }
+    }
 }
