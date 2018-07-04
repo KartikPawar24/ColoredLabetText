@@ -16,26 +16,46 @@ namespace ColoredLabetText
 
         private void RedBtn_Clicked(object sender, EventArgs e)
         {
-            MainLabel.Text = "You Clicked Red Button";
-            MainLabel.TextColor = Color.Red;
+            RedMainLabel.Text = "You Clicked Red Button";
+            RedMainLabel.TextColor = Color.Red;
+            BlueMainLabel.Text = String.Empty;
+            GreenMainLabel.Text = String.Empty;
+            YellowMainLabel.Text = String.Empty;
         }
 
         private void Blue_Clicked(object sender, EventArgs e)
         {
-            MainLabel.Text = "You Clicked Blue Button";
-            MainLabel.TextColor = Color.Blue;
+            BlueMainLabel.Text = "You Clicked Blue Button";
+            BlueMainLabel.TextColor = Color.Blue;
+            RedMainLabel.Text = String.Empty;
+            GreenMainLabel.Text = String.Empty;
+            YellowMainLabel.Text = String.Empty;
         }
 
         private void Green_Clicked(object sender, EventArgs e)
         {
-            MainLabel.Text = "You Clicked Green Button";
-            MainLabel.TextColor = Color.Green;
+           GreenMainLabel.Text = "You Clicked Green Button";
+            GreenMainLabel.TextColor = Color.Green;
+            RedMainLabel.Text = String.Empty;
+            BlueMainLabel.Text = String.Empty;
+            YellowMainLabel.Text = String.Empty;
         }
 
         private void Yellow_Clicked(object sender, EventArgs e)
         {
-            MainLabel.Text = "You Clicked Yellow Button";
-            MainLabel.TextColor = Color.Yellow;
+            YellowMainLabel.Text = "You Clicked Yellow Button";
+            YellowMainLabel.TextColor = Color.Yellow;
+            RedMainLabel.Text = String.Empty;
+            BlueMainLabel.Text = String.Empty;
+            GreenMainLabel.Text = String.Empty;
+        }
+
+        private void Clear_Clicked(object sender, EventArgs e)
+        {
+            RedMainLabel.Text = String.Empty;
+            BlueMainLabel.Text = String.Empty;
+            GreenMainLabel.Text = String.Empty;
+            YellowMainLabel.Text = String.Empty;
         }
     }
 }

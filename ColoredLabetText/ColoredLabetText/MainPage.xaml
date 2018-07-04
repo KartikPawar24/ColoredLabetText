@@ -27,9 +27,18 @@
                 Text="Yellow"
                 TextColor="Yellow"
                 Clicked="Yellow_Clicked"/>
-        
-        <Label x:Name="MainLabel"
-               TextColor="{Binding .}"/>
+
+        <Button x:Name="Clear"
+                Clicked="Clear_Clicked"
+                Text="Clear"/>
+
+        <Label x:Name="RedMainLabel"/>
+
+        <Label x:Name="BlueMainLabel"/>
+
+        <Label x:Name="GreenMainLabel"/>
+
+        <Label x:Name="YellowMainLabel"/>
 
     </StackLayout>
     
