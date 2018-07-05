@@ -31,14 +31,8 @@
         <Button x:Name="Clear"
                 Clicked="Clear_Clicked"
                 Text="Clear"/>
-
-        <Label x:Name="RedMainLabel"/>
-
-        <Label x:Name="BlueMainLabel"/>
-
-        <Label x:Name="GreenMainLabel"/>
-
-        <Label x:Name="YellowMainLabel"/>
+        
+        <Label x:Name="MainLabel"/>
 
     </StackLayout>
     
